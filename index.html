@@ -252,14 +252,14 @@ return{draw,_attachTooltip,_fmtTT};
 :root{--bg:#07101f;--s1:#0e1c30;--s2:#152540;--bd:#1c3050;--c:#00c8f0;--g:#00e5a0;--r:#ff4060;--y:#ffd060;--o:#ff8c42;--p:#7c5cfc;--tx:#dce8f5;--mu:#5a7a9a;}
 *{box-sizing:border-box;margin:0;padding:0;}
 body{font-family:'Segoe UI',system-ui,sans-serif;background:var(--bg);color:var(--tx);min-height:100vh;font-size:13px;}
-header{background:linear-gradient(90deg,#050f1c,#091828);border-bottom:1px solid var(--bd);padding:11px 22px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:300;}
+header{background:linear-gradient(90deg,#050f1c,#091828);border-bottom:1px solid var(--bd);padding:11px 22px;display:flex;align-items:center;justify-content:space-between;position:sticky;top:0;z-index:300;height:52px;box-sizing:border-box;}
 .logo{display:flex;align-items:center;gap:0;}
-.logo img{height:52px;width:auto;}
+.logo img{height:38px;width:auto;}
 .logo-sep{width:1px;height:24px;background:rgba(255,255,255,.25);margin:0 14px;}
 .logo-sub{font-size:11px;font-weight:600;color:rgba(255,255,255,.7);letter-spacing:.6px;text-transform:uppercase;}
 .hbadge{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);padding:4px 14px;border-radius:20px;font-size:11px;color:rgba(255,255,255,.75);}
 .hbadge b{color:#fff;}
-nav{background:var(--s1);border-bottom:1px solid var(--bd);padding:0 22px;display:flex;overflow-x:auto;scrollbar-width:none;}
+nav{background:var(--s1);border-bottom:1px solid var(--bd);padding:0 22px;display:flex;overflow-x:auto;scrollbar-width:none;position:sticky;top:52px;z-index:299;}
 nav::-webkit-scrollbar{display:none;}
 .tab{padding:11px 15px;font-size:12px;font-weight:500;color:var(--mu);cursor:pointer;border-bottom:2px solid transparent;white-space:nowrap;transition:.15s;}
 .tab:hover{color:var(--tx);}
